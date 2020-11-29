@@ -1,5 +1,5 @@
 import socket
-target_host = "vulnerable" 
+target_host = "vulnerable"
 
 target_port = 80  # create a socket object
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -17,5 +17,5 @@ http_response = repr(response)
 http_response_len = len(http_response)
 
 #display the response
-gh_imgui.text("[RECV] - length: %d" % http_response_len)
-gh_imgui.text_wrapped(http_response)
+print("[RECV] - length: %d" % http_response_len)
+print(http_response)
